@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Bootstrap Test</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-  </head>
-  <body>
-<button type="button" class="btn btn-default">Default</button>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-link">Link</button>
-  </body>
+<head>
+    <title>Monkey - Monkey your life.</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+    <style type='text/css'>
+        body {
+            background-color: #CCC;
+        }
+        #content {
+            background-color: #FFF;
+            border-radius: 5px;
+        }
+        #content .main {
+            padding: 20px;
+        }
+        #content .sidebar {
+            padding: 10px;
+        }
+        #content p {
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class='container'>
+    <h1>User Name</h1>
+    <div class='navbar navbar-inverse'>
+        <div class='navbar-inner nav-collapse' style="height: auto;">
+            <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Timeline</a></li>
+                <li><a href="#">Circles</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id='content' class='row-fluid'>
+        <div class='span9 main'>
+            <h2>Personal Info</h2>
+            <p>Name:</p>
+            <p>Age:</p>
+            <p>Email:</p>
+        </div>
+        <div class='span3 sidebar'>
+            <h2>Sidebar</h2>
+            <ul class="nav nav-tabs nav-stacked">
+                <li><a href='#'>Another Link 1</a></li>
+                <li><a href='#'>Another Link 2</a></li>
+                <li><a href='#'>Another Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
 </html>
